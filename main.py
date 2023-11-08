@@ -24,14 +24,13 @@ class Myform(QDialog):
             specjalizacja = "pediatra"
         elif self.ui.dermatolog.isChecked():
             specjalizacja = "dermatolog"
-        else:
-            specjalizacja = "internista"
         if self.ui.czyprywatna.isChecked():
             cena = 200
             zailedniwizyta = int(random.uniform(0, 14))
         else:
             zailedniwizyta = int(random.uniform(0, 1000))
-        self.ui.wynikrezerwacji.setText("Pomyślnie zarezerwowano wizytę u lekarza: " + specjalizacja + ".\n Termin wizyty przypada za: " + str(zailedniwizyta) + ".\n Koszt wizyty: " + str(cena) + ". ")
+        self.ui.wynikrezerwacji.setText("Pomyślnie zarezerwowano wizytę u lekarza: " + specjalizacja + ".\n Termin wizyty przypada za: " + str(zailedniwizyta) + " dni.\n Koszt wizyty: " + str(cena) + ". ")
+
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)

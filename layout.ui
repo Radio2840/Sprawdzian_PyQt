@@ -2,6 +2,9 @@
 <ui version="4.0">
  <class>Dialog</class>
  <widget class="QDialog" name="Dialog">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -62,9 +65,9 @@
   <widget class="QGroupBox" name="groupBox">
    <property name="geometry">
     <rect>
-     <x>250</x>
+     <x>230</x>
      <y>10</y>
-     <width>120</width>
+     <width>151</width>
      <height>80</height>
     </rect>
    </property>
@@ -82,6 +85,9 @@
     </property>
     <property name="text">
      <string>Internista</string>
+    </property>
+    <property name="checked">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QRadioButton" name="pediatra">
@@ -112,16 +118,22 @@
    </widget>
   </widget>
   <widget class="QCheckBox" name="czyprywatna">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
    <property name="geometry">
     <rect>
-     <x>400</x>
-     <y>30</y>
+     <x>420</x>
+     <y>50</y>
      <width>111</width>
      <height>16</height>
     </rect>
    </property>
    <property name="text">
     <string>Czy Wizyta prywatna?</string>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
    </property>
   </widget>
   <widget class="QPushButton" name="rezerwoj">
